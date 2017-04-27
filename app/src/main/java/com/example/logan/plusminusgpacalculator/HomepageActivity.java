@@ -18,8 +18,8 @@ public class HomepageActivity extends AppCompatActivity {
         setContentView(R.layout.activity_homepage);
 
         btnhomeCalc = (Button) findViewById(R.id.homeCalculateButton);
-        btnSettings = (Button) findViewById(R.id.homeSettingsButton);
-        tvClickHere = (TextView) findViewById(R.id.ClickableText);
+        //btnSettings = (Button) findViewById(R.id.homeSettingsButton);
+        //tvClickHere = (TextView) findViewById(R.id.ClickableText);
 
         btnhomeCalc.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -27,6 +27,7 @@ public class HomepageActivity extends AppCompatActivity {
                 startActivity(new Intent(HomepageActivity.this,CalculatorInputActivity.class));
             }
         });
+        /**
         btnSettings.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -39,5 +40,6 @@ public class HomepageActivity extends AppCompatActivity {
                 startActivity(new Intent(HomepageActivity.this,HelpUsOutActivity.class));
             }
         });
+         */
     }
 }

@@ -181,11 +181,11 @@ public class CalculatorInputActivity extends AppCompatActivity {
                     AlertDialog.Builder dialog = new AlertDialog.Builder(CalculatorInputActivity.this);
                     dialog.setCancelable(false);
                     dialog.setTitle("Plus Minus GPA");
-                    dialog.setMessage(String.format("Your current GPA is %.2f. Would you like to go back to the homepage or edit something?",gradeTotal/classTotal));
-                    dialog.setPositiveButton("Delete", new DialogInterface.OnClickListener() {
+                    dialog.setMessage(String.format("Your current GPA is %.2f. Would you like to reset the screen or edit something?",gradeTotal/classTotal));
+                    dialog.setPositiveButton("Reset", new DialogInterface.OnClickListener() {
                         @Override
                         public void onClick(DialogInterface dialog, int id) {
-                            startActivity(new Intent(CalculatorInputActivity.this,HomepageActivity.class));
+                            startActivity(new Intent(CalculatorInputActivity.this,CalculatorInputActivity.class));
                             finish();
 
                         }
